@@ -1,0 +1,375 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Slendy Dandys World", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Dandys world",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "need to see full tut before using!!"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Credit to RodeStrikerz (hes trying to crack Dandy too!!)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Astro",
+	Callback = function()
+      		local args = {
+    [1] = "Astro"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Thông Báo!",
+	Content = "wait for 4-5 second..",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+Tab:AddButton({
+	Name = "Activate",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Thông Báo!",
+	Content = "wait for 4-5 second..",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Gigi!!Yayay"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get GiGi",
+	Callback = function()
+      		local args = {
+    [1] = "Gigi"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Activate",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Get Shelly (cool i love her!!)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Shelly!",
+	Callback = function()
+      		local args = {
+    [1] = "Shelly"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Activate",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Vee Best Extractor Xd!!!!"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Vee",
+	Callback = function()
+      		local args = {
+    [1] = "Vee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Activate",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Sprout the strawberry (i will eat him)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Sprout",
+	Callback = function()
+      		local args = {
+    [1] = "Sprout"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Activate",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Pebble (i hate dog but hes a rock so ok)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Pebble",
+	Callback = function()
+      		local args = {
+    [1] = "Pebble"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Activate",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Goob the fluffy craft (poppy playtime?!!)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Goob",
+	Callback = function()
+      		local args = {
+    [1] = "Goob"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Activate",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Fake Dandy Trolling",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Only work if you in the select toon tab (in-game)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Press to troll",
+	Callback = function()
+      		local args = {
+    [1] = "Dandy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Voted"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Gameplay Script!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+	Name = "All in one ahh script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Dandy's%20World"))("t.me/arceusxscripts")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
