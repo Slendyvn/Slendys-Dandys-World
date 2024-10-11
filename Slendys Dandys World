@@ -314,6 +314,44 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Zesty Mirror"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Glisten!",
+	Callback = function()
+      		local args = {
+    [1] = "Glisten"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+
+game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Activate!",
+	Callback = function()
+      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Fake Dandy Trolling",
 	Icon = "rbxassetid://4483345998",
