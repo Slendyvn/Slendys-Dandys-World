@@ -86,14 +86,6 @@ Image = <string> - The icon of the notification.
 Time = <number> - The duration of the notfication.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "Gigi!!Yayay"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
 	Name = "Get GiGi",
 	Callback = function()
@@ -115,14 +107,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "Get Shelly (cool i love her!!)"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
 	Name = "Get Shelly!",
 	Callback = function()
@@ -139,19 +123,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Vee Best Extractor Xd!!!!"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
 	Name = "Get Vee",
 	Callback = function()
@@ -162,24 +133,6 @@ Tab:AddButton({
 game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
   	end    
 })
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Sprout the strawberry (i will eat him)"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
 
 Tab:AddButton({
 	Name = "Get Sprout",
@@ -197,19 +150,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Pebble (i hate dog but hes a rock so ok)"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
 	Name = "Get Pebble",
 	Callback = function()
@@ -224,14 +164,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Goob the fluffy craft (poppy playtime?!!)"
-})
-
---[[
-Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
@@ -255,14 +187,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "Zesty Mirror"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
 	Name = "Get Glisten",
 	Callback = function()
@@ -277,14 +201,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
-]]
-
-local Section = Tab:AddSection({
-	Name = "why Rodger x Toodle"
-})
-
---[[
-Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
@@ -303,14 +219,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "Decent toon good for solo run"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
 	Name = "Get Teagen",
 	Callback = function()
@@ -325,14 +233,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Shine bright like a diamond! ahhh toon"
-})
-
---[[
-Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
