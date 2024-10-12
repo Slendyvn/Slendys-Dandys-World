@@ -122,13 +122,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddButton({
-	Name = "Activate",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
-  	end    
-})
-
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
@@ -157,13 +150,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-
-Tab:AddButton({
-	Name = "Activate",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
-  	end    
-})
 
 --[[
 Name = <string> - The name of the button.
@@ -194,13 +180,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddButton({
-	Name = "Activate",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
-  	end    
-})
-
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
@@ -230,13 +209,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddButton({
-	Name = "Activate",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
-  	end    
-})
-
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
@@ -258,18 +230,6 @@ Tab:AddButton({
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Activate",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
   	end    
 })
 
@@ -301,14 +261,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-
-Tab:AddButton({
-	Name = "Activate",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
-  	end    
-})
-
+ 
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
@@ -323,21 +276,99 @@ Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
-	Name = "Get Glisten!",
+	Name = "Get Glisten",
 	Callback = function()
       		local args = {
     [1] = "Glisten"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
-
-game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
   	end    
 })
 
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "why Rodger x Toodle"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Rodger",
+	Callback = function()
+      		local args = {
+    [1] = "Rodger"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Decent toon good for solo run"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Teagen",
+	Callback = function()
+      		local args = {
+    [1] = "Teagen"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Shine bright like a diamond! ahhh toon"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Get Brightney",
+	Callback = function()
+      		local args = {
+    [1] = "Brightney"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Press this Button to Activate"
+})
+
+--[[
+Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
@@ -400,8 +431,16 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Dm Slendy/Boppyvn on Dandys bin discord if you really wanted to use one of these script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
 Tab:AddButton({
-	Name = "All in one ahh script(dont work for now)",
+	Name = "All in one ahh script(work for some device)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Dandy's%20World"))("t.me/arceusxscripts")
   	end    
@@ -421,7 +460,7 @@ Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
-	Name = "Advance script!",
+	Name = "Advanced script!(work for some device)",
 	Callback = function()
       		loadstring(game:HttpGet("https://rawscripts.net/raw/Dandy's-World-ALPHA-G0bbyD0llan-DW-18896"))()
   	end    
