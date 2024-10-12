@@ -27,7 +27,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "need to see full tut before using!!"
+	Name = "need to see full tut before using!! @baolovecat on tiktok"
 })
 
 --[[
