@@ -401,7 +401,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 Tab:AddButton({
-	Name = "All in one ahh script",
+	Name = "All in one ahh script(dont work for now)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Dandy's%20World"))("t.me/arceusxscripts")
   	end    
@@ -412,5 +412,24 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Get 2k ichor (in lobby) see tut on discord"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Advance script!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Dandy's-World-ALPHA-G0bbyD0llan-DW-18896"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 OrionLib:Init()
