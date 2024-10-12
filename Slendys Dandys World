@@ -677,4 +677,17 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Distract script!(work for some device)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Script-fly-18486"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
 OrionLib:Init()
