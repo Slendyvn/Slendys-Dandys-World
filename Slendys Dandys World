@@ -72,18 +72,6 @@ Image = <string> - The icon of the notification.
 Time = <number> - The duration of the notfication.
 ]]
 
-Tab:AddButton({
-	Name = "Activate",
-	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
 OrionLib:MakeNotification({
 	Name = "Notification",
 	Content = "Script by Slendy/Boppyvn",
