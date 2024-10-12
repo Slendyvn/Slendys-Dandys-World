@@ -372,6 +372,316 @@ Callback = <function> - The function of the button.
 ]]
 
 local Tab = Window:MakeTab({
+	Name = "Skins",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "You will need 600 ichor to use these (go to gameplay tab)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Dream Skins"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Buy Dream Vee!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "DreamVee"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Buy Dream Sprout!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "DreamSprout"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Buy Dream Pebble!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "DreamPebble"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Buy Dream Astro!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "DreamAstro"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Buy Dream Shelly!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "DreamShelly"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Buy Vintage Skins"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Vee!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageVee"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Sprout!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageSprout"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Pebble!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintagePebble"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Shelly!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageShelly"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Astro!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageAstro"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Goob!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageGoob"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Glisten!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageGlisten"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Rodger!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageRodger"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Teagen!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageTeagen"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Brightney!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageBrightney"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Shampoo(shrimpo)!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageShrimpo"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+local Tab = Window:MakeTab({
 	Name = "Fake Dandy Trolling",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
