@@ -969,7 +969,7 @@ Callback = <function> - The function of the button.
 
 
 local Section = Tab:AddSection({
-	Name = "Neuron X"
+	Name = "Neuron X(REQUIRED KEY)"
 })
 
 --[[
