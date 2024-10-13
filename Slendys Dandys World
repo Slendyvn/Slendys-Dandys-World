@@ -869,12 +869,14 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Fe dandy",
 	Callback = function()
-      		while true do 
-game.replicatedstorage.gettutorialtower("Dandy")
-print("you got dandy")
+      		local p = game.Players.LocalPlayer.UserId
 
-end
+local dandy = Instance.new("StringValue")
+dandy.Name = "Dandy"
+dandy.Parent = game.ReplicatedStorage.PlayerData:FindFirstChild(p)
+dandy.Value = "Default"
 
+game:GetService("PlayerUsername").LocalPlayer:Kick("Dandy Has Been Given, Rejoin Game.")
 })
 
 --[[
