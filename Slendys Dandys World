@@ -877,7 +877,6 @@ Tab:AddButton({
 	Name = "totally real dandy script",
 	Callback = function()
       		game.players.LocalPlayer:Kick()
-  	end    
 })
 
 --[[
