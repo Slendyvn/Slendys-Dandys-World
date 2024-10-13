@@ -873,19 +873,10 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "Ty 🕷Spooky Sonat🎃 for helping me making it"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-
 Tab:AddButton({
 	Name = "Totally real dandy script(loud noise idk why the dev put it in)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MostValuable/lobotomised/refs/heads/main/lobotomy"))
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Slendyvn/Lobotomy/refs/heads/main/E"))()
 
   	end    
 })
