@@ -884,46 +884,7 @@ Name = <string> - The name of the section.
 Tab:AddButton({
 	Name = "totally real dandy script",
 	Callback = function()
-      		--- lobotomy script
--- note this is a pure visual script
-local ids = {"rbxassetid://8863377426","rbxassetid://7816195044","rbxassetid://252192336","rbxassetid://5096003821"}
-local lobotomysound = Instance.new("Sound")
-lobotomysound.Looped = true
-lobotomysound.Volume = 0.1
-lobotomysound.SoundId = "rbxassetid://7817626386"
-lobotomysound.Parent = workspace
-lobotomysound:Play()
-
-local humanoid = game.Players.LocalPlayer.Character.Humanoid
-local colorcorrection = Instance.new("ColorCorrectionEffect")
-local lobotomisedfov = 50
-local normalfov = 100
-local camera = game.Workspace.CurrentCamera
-local sound = Instance.new("Sound")
-sound.Volume = 10
-sound.Parent = workspace
-local colors = {Color3.fromRGB(185,21,255),Color3.fromRGB(255, 0, 4),Color3.fromRGB(70, 37, 255),Color3.fromRGB(255, 126, 52)}
-colorcorrection.TintColor = Color3.fromRGB(185,21,255)
-colorcorrection.Contrast = 99
-colorcorrection.Brightness = -20
-colorcorrection.Saturation = 0.1
-
-
-
-while true do
-    task.wait(math.random(1,15))
-    colorcorrection.TintColor = colors[math.random(1,#colors)]
-    colorcorrection.Parent = game.Lighting
-    sound.SoundId = ids[math.random(1,#ids)]
-
-    sound:Play()
-    humanoid.Sit = true
-    camera.FieldOfView = lobotomisedfov
-    task.wait(sound.TimeLength + 7)
-    humanoid.Sit = false
-    colorcorrection.Parent = game.ReplicatedStorage
-    camera.FieldOfView = normalfov
-end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MostValuable/lobotomised/refs/heads/main/lobotomy"))
   	end
 })
 
