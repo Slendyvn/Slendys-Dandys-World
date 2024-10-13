@@ -251,6 +251,137 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Get RizzleDizzle",
+	Callback = function()
+      		local args = {
+    [1] = "RazzleDazzle"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Get Cosmo",
+	Callback = function()
+      		local args = {
+    [1] = "Cosmo"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Get Toodles",
+	Callback = function()
+      		local args = {
+    [1] = "Toodles"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Get Tisha",
+	Callback = function()
+      		local args = {
+    [1] = "Tisha"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Get Flutter",
+	Callback = function()
+      		local args = {
+    [1] = "Flutter"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Get Scraps",
+	Callback = function()
+      		local args = {
+    [1] = "Scraps"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddButton({
+	Name = "Get Finn",
+	Callback = function()
+      		local args = {
+    [1] = "Finn"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Get Shrimpo(Why)",
+	Callback = function()
+      		local args = {
+    [1] = "Shrimpo"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
 local Section = Tab:AddSection({
 	Name = "Press this Button to Activate"
 })
@@ -579,7 +710,124 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Vintage RizzDizz",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageRazzleDazzle"
+}
 
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Cosmo!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageCosmo"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Toodles!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageToodles"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Tisha!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageTisha"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Flutter",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageFlutter"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Scraps",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageScraps"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Vintage Finn!",
+	Callback = function()
+      		local args = {
+    [1] = "Gacha1",
+    [2] = "VintageFinn"
+}
+
+game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 local Tab = Window:MakeTab({
 	Name = "Fake Dandy Trolling",
@@ -697,6 +945,34 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+
+local Section = Tab:AddSection({
+	Name = "Neuron X"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Neuron X",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+-- Script made by Neuron X Team
+-- Their official discord: https://discord.gg/HkRUtyTbk2
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Python/main/Main.lua"))();
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 
 
 OrionLib:Init()
