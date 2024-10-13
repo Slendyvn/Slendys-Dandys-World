@@ -865,25 +865,25 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "STILL IN TEST!!"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
 
 Tab:AddButton({
-	Name = "Fe dandy",
+	Name = "totally real dandy script",
 	Callback = function()
-      		local p = game.Players.LocalPlayer.UserId
-
-local dandy = Instance.new("StringValue")
-dandy.Name = "Dandy"
-dandy.Parent = game.ReplicatedStorage.PlayerData:FindFirstChild(p)
-dandy.Value = "Default"
-
-game:GetService("PlayerUsername").LocalPlayer:Kick("Dandy Has Been Given, Rejoin Game.")
+      		game:Disconnect()
+  	end    
 })
 
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-
 
 
 local Tab = Window:MakeTab({
