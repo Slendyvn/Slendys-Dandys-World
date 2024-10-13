@@ -873,24 +873,6 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
-Tab:AddButton({
-	Name = "Press to troll",
-	Callback = function()
-      		local args = {
-    [1] = "Dandy"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Voted"):InvokeServer(unpack(args))
-
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-
 local Section = Tab:AddSection({
 	Name = "Ty 🕷Spooky Sonat🎃 for helping me making it"
 })
@@ -901,7 +883,7 @@ Name = <string> - The name of the section.
 
 
 Tab:AddButton({
-	Name = "Totally real dandy script",
+	Name = "Totally real dandy script(loud noise idk why the dev put it in)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/MostValuable/lobotomised/refs/heads/main/lobotomy"))
 
