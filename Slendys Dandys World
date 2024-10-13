@@ -873,14 +873,6 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "Ty @🕷Spooky Sonat🎃 for helping me making it"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
 Tab:AddButton({
 	Name = "Press to troll",
 	Callback = function()
@@ -893,12 +885,6 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-
-
-
-
-
-
 
 local Tab = Window:MakeTab({
 	Name = "Gameplay Script!",
