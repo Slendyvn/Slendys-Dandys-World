@@ -994,6 +994,27 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "by uh talented uh scripter uh uh ok @ega_biba"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+
+Tab:AddButton({
+	Name = "DISTRACT V2(work with most device)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/PDdkDsgy"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 
 
 OrionLib:Init()
