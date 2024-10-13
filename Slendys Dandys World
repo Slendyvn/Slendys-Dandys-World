@@ -865,6 +865,25 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+
+Tab:AddButton({
+	Name = "Fe dandy",
+	Callback = function()
+      		while true do 
+game.replicatedstorage.gettutorialtower("Dandy")
+print("you got dandy")
+
+end
+
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
 local Tab = Window:MakeTab({
 	Name = "Gameplay Script!",
 	Icon = "rbxassetid://4483345998",
