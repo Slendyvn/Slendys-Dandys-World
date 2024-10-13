@@ -873,6 +873,14 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Ty @🕷Spooky Sonat🎃
+ for helping me making it"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
 Tab:AddButton({
 	Name = "totally real dandy script",
 	Callback = function()
