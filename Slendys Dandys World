@@ -956,7 +956,7 @@ Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
-	Name = "Neuron X",
+	Name = "Neuron X(work for some device)",
 	Callback = function()
       		--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
