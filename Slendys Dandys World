@@ -874,8 +874,7 @@ Name = <string> - The name of the section.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "Ty @🕷Spooky Sonat🎃
- for helping me making it"
+	Name = "Ty @🕷Spooky Sonat🎃 for helping me making it"
 })
 
 --[[
