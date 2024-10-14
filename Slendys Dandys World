@@ -1015,6 +1015,81 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Fire script (required key)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+
+Tab:AddButton({
+	Name = "Op script include auto farm!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Dandy's-World-ALPHA-Script-V1-FFJ-Hub-20178"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Credit",
+	Icon = "rbxassetid://44833",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Most script credit goes to @rodestrikerz on discord and tiktok"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+local Section = Tab:AddSection({
+	Name = "dandys world all in on bu baconhack"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Dandy script by @l_orangejuice"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+local Section = Tab:AddSection({
+	Name = "ichor script credit in script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Uhh fly script v2 shampoo pfp uhh by @ega_biba"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
 
 
 OrionLib:Init()
