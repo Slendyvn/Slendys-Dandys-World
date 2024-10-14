@@ -874,7 +874,7 @@ Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
-	Name = "Totally real dandy script(loud noise idk why the dev put it in)",
+	Name = "Totally real dandy script(Use Boxten)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Slendyvn/Lobotomy/refs/heads/main/E"))()
 
