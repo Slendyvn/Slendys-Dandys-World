@@ -1036,7 +1036,31 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "By uhh idk uhhh @hatsunemikun1fan on discord"
+})
 
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Boost yourself(SHELLY ONLY)",
+	Callback = function()
+      		local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character,
+    [2] = CFrame.new(-179.29843139648438, 146.2311248779297, -164.61495971679688) * CFrame.Angles(3.1415927410125732, 0.4017193913459778, -3.141592502593994),
+    [3] = game:GetService("Players").LocalPlayer.Character
+}
+
+game:GetService("ReplicatedStorage").Events.AbilityEvent:InvokeServer(unpack(args))
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 local Tab = Window:MakeTab({
 	Name = "Credit",
@@ -1090,6 +1114,13 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "uhh idk uhhh @hatsunemikun1fan on discord make shelly boost uhh script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
 
 
 OrionLib:Init()
