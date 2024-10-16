@@ -1082,19 +1082,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddButton({
-	Name = "BALDDandy",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Slendyvn/bald-dandy/refs/heads/main/Bald"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-
 local Tab = Window:MakeTab({
 	Name = "Credit",
 	Icon = "rbxassetid://44833",
@@ -1124,7 +1111,7 @@ Name = <string> - The name of the section.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "bald Dandy script by @l_orangejuice"
+	Name = "Dandy script by @l_orangejuice"
 })
 
 --[[
