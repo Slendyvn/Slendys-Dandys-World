@@ -1062,6 +1062,26 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "by @crazee42 on tiktok ok bye"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Dandy",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/LrGDCr7Z"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 local Tab = Window:MakeTab({
 	Name = "Credit",
 	Icon = "rbxassetid://44833",
@@ -1083,7 +1103,7 @@ Name = <string> - The name of the section.
 ]]
 
 local Section = Tab:AddSection({
-	Name = "dandys world all in on bu baconhack"
+	Name = "dandys world all in one by baconhack"
 })
 
 --[[
@@ -1122,5 +1142,12 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Fe dandy by @crazee42 on tiktok *died cutely*"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
 
 OrionLib:Init()
