@@ -1096,19 +1096,17 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 
 Tab:AddLabel("THIS TAB IS STILL IN TEST")
 
-Tab:AddParagraph("Read","Get the animation in discord")
+Tab:AddParagraph("Read","Get the animation in ]]
 
 Tab:AddTextbox({
-	Name = "Insert ID",
-	Default = "default box input",
+	Name = "IDLE ANIM",
+	Default = ".",
 	TextDisappear = true,
 	Callback = function(Value)
 		local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 
 character.Animate.idle.Animation1.AnimationId = "rbxassetid://Value"
-        character.Animate.idle.Animation2.AnimationId = "rbxassetid://Value"
-        character.Animate.run.RunAnim.AnimationId = "rbxassetid://Value"
 	end	  
 })
 
@@ -1119,7 +1117,43 @@ TextDisappear = <bool> - Makes the text disappear in the textbox after losing fo
 Callback = <function> - The function of the textbox.
 ]]
 
+Tab:AddTextbox({
+	Name = "WALK ID",
+	Default = ".",
+	TextDisappear = true,
+	Callback = function(Value)
+		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
 
+character.Animate.idle.Animation2.AnimationId = "rbxassetid://Value"
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+
+Tab:AddTextbox({
+	Name = "RUN ID",
+	Default = ".",
+	TextDisappear = true,
+	Callback = function(Value)
+		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+character.Animate.run.RunAnim.AnimationId = "rbxassetid://Value"
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
 
 
 local Tab = Window:MakeTab({
