@@ -1151,6 +1151,22 @@ TextDisappear = <bool> - Makes the text disappear in the textbox after losing fo
 Callback = <function> - The function of the textbox.
 ]]
 
+Tab:AddButton({
+	Name = "T.Toodles Anim",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+character.Animate.idle.Animation1.AnimationId = "rbxassetid:// 17630950280"
+        character.Animate.idle.Animation2.AnimationId = "rbxassetid://17630950280"
+        character.Animate.run.RunAnim.AnimationId = "rbxassetid://17630950280"
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 local Tab = Window:MakeTab({
 	Name = "Credit",
