@@ -1081,6 +1081,58 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+Tab:AddLabel("SONATS SCRIPT AND OK")
+Tab:AddToggle({
+	Name = "auto farm test(DONT USE)",
+	Default = false,
+	Callback = function(Value)
+		if not floor:WaitForChild("Items") then return end
+		for _, generator in pairs(machines:GetChildren()) do
+                     
+			print(generator.Name)
+                     
+			local ActivePlayer = generator.Stats.ActivePlayer
+			local IsDone = generator.Stats.Completed
+			local BPToTP = generator.TeleportPositions.TeleportPosition
+			local ProximityPrompt = generator.Prompt.ProximityPrompt
+			print(BPToTP)
+			print(ProximityPrompt)
+			print(IsDone)
+			print(ActivePlayer)
+			print("[checking these values]")
+		
+			
+				print("Teleporting!")
+				TP(BPToTP)  -- Teletransporta al jugador
+				wait(0.3)
+				print("Activating PP!")
+				fireproximityprompt(ProximityPrompt) 
+                                wait(.5)
+                     
+                              hrp.CFrame = CFrame.new(0,300,0)
+                              BPToTP = nil
+				
+			end
+	end    
+})
+
+--[[
+Name = <string> - The name of the toggle.
+Default = <bool> - The default value of the toggle.
+Callback = <function> - The function of the toggle.
+]]
+
+Tab:AddButton({
+	Name = "Remove skill check (DONT USE)",
+	Callback = function()
+      		Player.PlayerGui.ScreenGui.Menu.SkillCheckFrame:Destroy()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 local Tab = Window:MakeTab({
 	Name = "Animation",
