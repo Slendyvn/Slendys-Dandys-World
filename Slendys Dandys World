@@ -1,3 +1,22 @@
+local ScreenGui1 = Instance.new("ScreenGui") 
+
+local ImageButton1 = Instance.new("ImageButton") 
+ScreenGui1.Parent = game.CoreGui
+ImageButton1.Parent = ScreenGui1
+ImageButton1.Position = UDim2.new(0,0.5,0)
+ImageButton1.Size = UDim2.new(0.10,0,0.2)
+ImageButton1.Image = "rbxassetid://105521450035944"
+ImageButton1.Draggable = true
+ImageButton1.Visible = true
+
+ImageButton1.MouseButton1Click:Connect(function() 
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "RightShift" , false , game)
+end)
+
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = ImageButton1
+UICorner1.CornerRadius = UDim.new(0.1,0)
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Orion')))()
 
 local Window = OrionLib:MakeWindow({Name = "Slendy Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "WHERE IS HE!!", IntroIcon = "rbxassetid://7888350796"})
