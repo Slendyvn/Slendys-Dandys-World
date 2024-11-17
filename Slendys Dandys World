@@ -14,6 +14,19 @@ Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
+local Tab = Window:MakeTab({
+	Name = "Announcement",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddLabel("This hub will recieve Updates but will NOT be often")
 
 local Tab = Window:MakeTab({
 	Name = "Fake Dandy Trolling",
@@ -240,5 +253,25 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Fly reborn by ega"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Fly Reborn",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/PDdkDsgy"))()
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 OrionLib:Init()
