@@ -44,6 +44,7 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
+
 Tab:AddLabel("Mobile support added")
 Tab:AddLabel("This hub will recieve Updates but will NOT be often")
 
@@ -100,10 +101,6 @@ Tab:AddButton({
 })
 
 
-
-
-
-
 local Tab = Window:MakeTab({
 	Name = "Gameplay Script!",
 	Icon = "rbxassetid://4483345998",
@@ -114,22 +111,6 @@ local Tab = Window:MakeTab({
 Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "Dm Slendy/Boppyvn on Dandys bin discord if you really wanted to use one"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-local Section = Tab:AddSection({
-	Name = "of these script"
-})
-
---[[
-Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
@@ -284,7 +265,6 @@ Tab:AddButton({
 	Name = "Fly Reborn",
 	Callback = function()
       		loadstring(game:HttpGet("https://pastebin.com/raw/PDdkDsgy"))()
-
   	end    
 })
 
