@@ -19,7 +19,7 @@ UICorner1.CornerRadius = UDim.new(0.1,0)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Draggable')))()
 
-local Window = OrionLib:MakeWindow({Name = "Slendy Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "WHERE IS HE!!", IntroIcon = "rbxassetid://7888350796"})
+local Window = OrionLib:MakeWindow({Name = "Slendy Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "The Revival", IntroIcon = "rbxassetid://11471790989"})
 
 --[[
 Name = <string> - The name of the UI.
