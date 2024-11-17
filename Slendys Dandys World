@@ -35,7 +35,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 
 local Tab = Window:MakeTab({
 	Name = "Announcement",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://17890682704",
 	PremiumOnly = false
 })
 
@@ -50,7 +50,7 @@ Tab:AddLabel("This hub will recieve Updates but will NOT be often")
 
 local Tab = Window:MakeTab({
 	Name = "Fake Dandy Trolling",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://128109085171590",
 	PremiumOnly = false
 })
 
@@ -103,7 +103,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "Gameplay Script!",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://123107022359108",
 	PremiumOnly = false
 })
 
