@@ -273,4 +273,54 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "USE IT IN A RUN also check credit"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+Tab:AddButton({
+	Name = "Admin Panel",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+local Tab = Window:MakeTab({
+	Name = "CREDIT",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+Tab:AddParagraph("Announcement","I WILL ADD CREDIT AND MORE SCRIPT SO STAY TUNED")
+
+Tab:AddLabel("Admin Panel by ega on discord!")
+Tab:AddButton({
+	Name = "Their discord (kotolog)",
+	Callback = function()
+      		setclipboard("https://discord.gg/kotolog")
+toclipboard("https://discord.gg/kotolog")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddLabel("PICKLEZ ITS YOUR FAULT,YOUR FAULT")
+
+
 OrionLib:Init()
